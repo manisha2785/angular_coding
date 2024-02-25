@@ -1,0 +1,14 @@
+<p>{{message}}</p>
+<table>
+    <tr>
+        <td>key</td>
+        <td>value</td>
+    </tr>
+       <tr *ngFor="let item of obj.items">
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td><button onclick="changeItem(item.id)"> Edit </button></td>
+      </tr>
+   </table>
+
+
